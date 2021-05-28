@@ -325,7 +325,7 @@ stock void VSH2_GlowThink(VSH2Player boss, const float decrease) {
 	}
 }
 
-stock bool VSH2_SuperJumpThink(VSH2Player boss, const float charging, const float jumpcharge, int button=(IN_ATTACK2|IN_DUCK)) {
+stock bool VSH2_SuperJumpThink(VSH2Player boss, const float charging, const float jumpcharge, int button=IN_ATTACK2) {
 	int player = boss.index;
 	int buttons = GetClientButtons(player);
 	float charge = boss.GetPropFloat("flCharge");
